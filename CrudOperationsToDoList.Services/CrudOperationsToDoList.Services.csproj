@@ -7,13 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="DTOs\ToDoDTO.cs" />
-    <Compile Remove="Services\ToDoService.cs" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
   </ItemGroup>
-
+	
   <ItemGroup>
-    <None Include="DTOs\ToDoDTO.cs" />
-    <None Include="Services\ToDoService.cs" />
+    <ProjectReference Include="..\CrudOperationsToDoList.DAL\CrudOperationsToDoList.DAL.csproj" />
   </ItemGroup>
 
 </Project>
